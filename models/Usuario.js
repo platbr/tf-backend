@@ -14,10 +14,10 @@ module.exports = function () {
     var indicacao = '';
     var token = '';
     return  {
-        parseToSave: function (obj) {
+        parseToUse: function (obj) {
             var validos = ['nome', 'sobrenome', 'sexo', 'dn', 'email', 'senha', 'cel', 'cidade', 'estado', 'indicacao', 'token'];
             var obtidos = Object.getOwnPropertyNames(obj);
-            return util.parseToSave(obj,validos,obtidos);
+            return util.parseToUse(obj,validos,obtidos);
         },
         hasRequired: function (obj) {
             var requeridos = ['nome', 'sobrenome', 'sexo', 'dn', 'email', 'senha', 'cel', 'cidade', 'estado', 'token'];

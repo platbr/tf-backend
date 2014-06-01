@@ -3,7 +3,6 @@ module.exports = function () {
     var Usuario = require('../models/Usuario');
     var connFactory = require('./util/ConnectionFactory');
     var conexao = new connFactory;
-
     return  {
         getByCel: function (cel, callback) {
             conexao.readNodesWithLabelsAndProperties(['Usuario'], {cel: cel}, function (err, readNode) {

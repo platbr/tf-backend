@@ -1,7 +1,7 @@
 module.exports = function () {
     //Comum de todas as classes.
     return  {
-        parseToSave: function (obj,validos,obtidos) {
+        parseToUse: function (obj,validos,obtidos) {
             for (var prop in obtidos) {
                 if (typeof obj[obtidos[prop]] != 'string') {
                     delete obj[obtidos[prop]];
