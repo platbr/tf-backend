@@ -40,6 +40,8 @@ module.exports = function () {
                         }
                     }
                 });
+            } else{
+                res.send({status: 'erro', info: 'Dados insuficientes!', cel: req.body.cel, tipo: 'regas'});
             }
         }
     };
